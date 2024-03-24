@@ -17,17 +17,19 @@ class Node {
 //   return array
 // };
 
+
+//recursive
 const linkedListValues = (head) => {
-  
-    let values = []
-    collectValues(head, values)
-    return values
-    
-    function collectValues(node, values){
-      if(node === null) return values
-      values.push(node.val)
-      collectValues(node.next, values)
-    }
-   
-  };
-  
+
+let values = []
+collectValues(head, values)
+return values
+
+function collectValues(node, values){
+    if(node === null) return values
+    values.push(node.val)
+    collectValues(node.next, values)
+}
+
+};
+
