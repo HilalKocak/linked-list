@@ -2,6 +2,7 @@ function ListNode(val, next) {
     this.val = (val === undefined ? 0 : val);
     this.next = (next === undefined ? null : next);
 }
+// Time O(n)  Space O(1)
 var isPalindrome = function(head) {
     if(!head || !head.next) return true
 
@@ -14,7 +15,7 @@ var isPalindrome = function(head) {
         slow = slow.next
         fast = fast.next.next
     }
-
+// reverse second half
     let second = slow.next
     slow.next = null
     let prev = null
