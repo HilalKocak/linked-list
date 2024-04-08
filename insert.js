@@ -1,4 +1,9 @@
-
+class Node {
+    constructor(val) {
+      this.val = val;
+      this.next = null;
+    }
+}
 const insertNode = (head, value, index) => {
     if(index === 0){
       let newNode = new Node(value)

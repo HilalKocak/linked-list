@@ -14,7 +14,12 @@
   
 //   return head
 // };
-
+class Node {
+    constructor(val) {
+      this.val = val;
+      this.next = null;
+    }
+}
 
 const removeNode = (head, targetVal) => {
     if(head === null) return null
